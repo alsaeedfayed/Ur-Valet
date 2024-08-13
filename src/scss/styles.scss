@@ -1,0 +1,18 @@
+//Base setup
+@import "../scss/base/base";
+
+//abstract
+@import "../scss/abstract/variables";
+
+//components
+@import "../scss/components/btn-rounded-primary";
+@import "../scss/components/btn-rounded-secondary";
+
+//pages
+@import "../scss/pages/home";
+
+//layout
+@import "../scss/layout/header";
+
+//utilities
+@import "../scss/utils/utils";

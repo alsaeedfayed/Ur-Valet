@@ -1,0 +1,32 @@
+@import "../abstract/variables";
+@import "../abstract/mixins";
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+/* Default styles for English (LTR) */
+body[lang="en"] {
+  direction: ltr;
+  text-align: left;
+}
+
+/* Styles for Arabic (RTL) */
+body[lang="ar"] {
+  direction: rtl;
+  text-align: right;
+}
+
+.container {
+  margin: 0 auto;
+  background-color: $color-white;
+}

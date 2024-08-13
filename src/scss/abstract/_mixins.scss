@@ -1,0 +1,44 @@
+@mixin button-styles(
+  $bg-color,
+  $text-color: #fff,
+  $border-radius,
+  $padding,
+  $line-height: 2.4rem
+) {
+  background-color: $bg-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  padding: 1.6rem 3.8rem;
+  line-height: $line-height;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 5%);
+  }
+}
+
+//media mixins
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    } //600px
+  }
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    } //900px  //notice we are using ems to be relative efficted
+  }
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  @if $breakpoint == big-desktop {
+    @media only screen and (max-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}

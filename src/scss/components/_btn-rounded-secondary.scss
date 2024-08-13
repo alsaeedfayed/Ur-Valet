@@ -1,0 +1,13 @@
+@import "../abstract/mixins";
+
+.btn-rounded-secondary {
+  @include button-styles(
+    $bg-color: $color-secondary,
+    $border-radius: 10rem,
+    $padding: 1rem
+  );
+
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
