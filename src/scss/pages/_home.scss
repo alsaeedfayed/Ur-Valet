@@ -169,7 +169,7 @@
   &__section {
     margin-top: 10rem;
     display: flex;
-    justify-content: space-between;
+    gap: 8rem;
     padding: 0 0 4rem 0;
 
     @include respond("phone") {
@@ -178,6 +178,7 @@
       padding-top: 5rem;
       flex-direction: column;
       align-items: center;
+      gap: 1rem;
     }
     &--intro {
       display: flex;
@@ -241,9 +242,14 @@
       border-radius: 4rem;
       background-color: #b3c9dc;
       position: relative;
+      padding: 0 2rem 0 2rem;
       img {
         position: relative;
+        width: 50rem;
         top: -5rem;
+        @include respond("phone") {
+          width: 26rem;
+        }
       }
 
       @include respond("phone") {
