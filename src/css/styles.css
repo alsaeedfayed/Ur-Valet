@@ -308,6 +308,27 @@ body[lang=ar] {
   }
 }
 
+.contractors {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem 0;
+}
+.contractors__heading {
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #000000;
+  text-align: center;
+}
+.contractors__content {
+  display: flex;
+  gap: 6rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
 .container {
   width: 100%;
 }
