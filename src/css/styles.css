@@ -329,6 +329,151 @@ body[lang=ar] {
   margin-top: 5rem;
 }
 
+.why-urVale {
+  margin-top: 15rem;
+}
+.why-urVale .header {
+  display: flex;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .header {
+    flex-direction: column;
+    padding: 0 2rem;
+    text-align: center;
+  }
+}
+.why-urVale .header__title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 6rem;
+  width: 50%;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .header__title {
+    width: 100%;
+    line-height: 4rem;
+    font-size: 1.3rem;
+  }
+}
+.why-urVale .header__title h1 span {
+  color: #3467ab;
+}
+.why-urVale .header__description {
+  font-size: 2.2rem;
+  word-break: break-all;
+  width: 50%;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .header__description {
+    width: 100%;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+.why-urVale .header__description--bold {
+  font-weight: 700;
+}
+.why-urVale .content {
+  margin-top: 6rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content {
+    padding: 0 2rem;
+  }
+}
+.why-urVale .content .row {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  gap: 3rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content .row {
+    flex-direction: column;
+  }
+}
+.why-urVale .content .row2 {
+  margin-top: 4rem;
+}
+.why-urVale .content .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4rem;
+  padding: 4rem 4rem 0 4rem;
+  width: 50rem;
+  position: relative;
+}
+.why-urVale .content .card img {
+  width: 40rem;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content .card {
+    width: unset;
+  }
+  .why-urVale .content .card img {
+    width: 26rem;
+  }
+}
+.why-urVale .content .card p {
+  padding: 2rem 0;
+  font-size: 1.7rem;
+  line-height: 3rem;
+}
+.why-urVale .content .card--elctronics {
+  background-color: #a1a5b7;
+}
+.why-urVale .content .card--elctronics h1 {
+  color: #ffffff;
+}
+.why-urVale .content .card--elctronics p {
+  color: #ffffff;
+}
+.why-urVale .content .card--automation {
+  background-color: #7498c4;
+}
+.why-urVale .content .card--automation h1 {
+  color: #000000;
+}
+.why-urVale .content .card--automation p {
+  color: #000000;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content .card--automation {
+    margin-top: 3rem;
+  }
+}
+.why-urVale .content .card--bringCar {
+  background-color: #89a8cc;
+}
+.why-urVale .content .card--bringCar h1 {
+  color: #ffffff;
+}
+.why-urVale .content .card--bringCar p {
+  color: #ffffff;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content .card--bringCar {
+    margin-top: 3rem;
+  }
+}
+.why-urVale .content .card--orderDeails {
+  background-color: #b3c9dc;
+}
+.why-urVale .content .card--orderDeails h1 {
+  color: #000000;
+}
+.why-urVale .content .card--orderDeails p {
+  color: #000000;
+}
+@media only screen and (max-width: 37.5em) {
+  .why-urVale .content .card--orderDeails {
+    margin-top: 3rem;
+  }
+}
+
 .container {
   width: 100%;
 }
