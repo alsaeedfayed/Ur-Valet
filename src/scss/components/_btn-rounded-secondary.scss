@@ -1,6 +1,7 @@
 @import "../abstract/mixins";
 
 .btn-rounded-secondary {
+  text-align: center;
   @include button-styles(
     $bg-color: $color-secondary,
     $border-radius: 10rem,

@@ -17,14 +17,20 @@
     <div class="container">
       <!-- <button onclick="switchLanguage('ar')">ع</button> -->
       <!-- HOME SECTION WITH HEADER INCLUDED -->
-      <div class="home">
+      <div class="home" id="home">
         <div class="inner-container">
           <header class="header">
             <div class="header__logo">
-              <img src="./assets/imags/logo.image.svg" alt="site logo" />
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="site logo"
+              />
             </div>
             <div class="header__logo--mobile">
-              <img src="./assets/imags/logo-mobile.image.svg" alt="site logo" />
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="site logo"
+              />
             </div>
 
             <div class="header__menu-toggle">
@@ -40,7 +46,7 @@
               <span class="horizontal-line-mobile"></span>
               <ul class="list-items">
                 <li class="list-items__item loginCompany">
-                  <a href="#login">login as company</a>
+                  <a href="#contact">login as company</a>
                   <img
                     src="./assets/icons/arrow-right.icon.svg"
                     alt="arrow icons"
@@ -54,7 +60,7 @@
                   <a href="#services">services</a>
                 </li>
                 <li class="list-items__item">
-                  <a href="#contact">about us</a>
+                  <a href="#footer">about us</a>
                 </li>
               </ul>
               <div class="menu-mobile-footer">
@@ -68,7 +74,9 @@
               </div>
             </nav>
             <div class="login">
-              <button class="btn-rounded-secondary">login as company</button>
+              <a href="#contact" class="btn-rounded-secondary"
+                >login as company</a
+              >
             </div>
           </header>
           <span class="horizontal-line"></span>
@@ -88,9 +96,9 @@
                 requests, following up on employees and their job performance,
                 and attracting new customers.
               </p>
-              <button class="btn-request-now btn-rounded-primary">
+              <a href="#contact" class="btn-request-now btn-rounded-primary">
                 request now
-              </button>
+              </a>
             </div>
             <div class="home__section--image">
               <img
@@ -107,7 +115,7 @@
         <h1 class="contractors__heading">
           Support and being used with large company like
         </h1>
-        <div class="contractors__content">
+        <div class="contractors__content" id="contractor">
           <img src="./assets/svgs/makani.svg" alt="makani logo" />
           <img src="./assets/svgs/wokoof.svg" alt="wokoof logo" />
           <img src="./assets/svgs/pmc.svg" alt="pmc logo" />
@@ -119,7 +127,7 @@
       </div>
 
       <!-- START OF WHY UVALET SECTION -->
-      <div class="why-urVale">
+      <div class="why-urVale" id="why">
         <div class="inner-container">
           <div class="header">
             <div class="header__title">
@@ -207,7 +215,7 @@
       </div>
 
       <!-- START OF FEATURES SECTION -->
-      <div class="features">
+      <div class="features" id="services">
         <div class="inner-container">
           <div class="content">
             <div class="content__left-col">
@@ -225,7 +233,7 @@
                     src="./assets/icons/arrow-right-circle.icon.svg"
                     alt="arror icon"
                 /></span>
-                <span>join us now!</span>
+                <span><a href="#contact">join us now!</a></span>
               </div>
               <div class="feature-items feature-items--leftcol-item">
                 <div class="feature-items__item">
@@ -416,7 +424,7 @@
       </div> -->
 
       <!-- CONTACT SECTION -->
-      <div class="contact">
+      <div class="contact" id="contact">
         <div class="inner-container">
           <div class="content">
             <div class="contact-means">
@@ -471,6 +479,51 @@
                 </button>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="inner-container">
+          <div class="content" id="footer">
+            <div class="left-col">
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="logo"
+              />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae laboriosam accusamus minus nihil? Deserunt, rem magni
+                aspernatur odit illo id excepturi incidunt officiis nulla porro
+                ipsa mollitia alias atque repellendus.
+              </p>
+            </div>
+            <div class="right-col">
+              <div class="col-1">
+                <span>about us</span>
+                <span>services</span>
+                <span>why ur valet?</span>
+              </div>
+              <div class="col-2">
+                <span>terms & conditions</span>
+                <span>privacy policy</span>
+                <span>become a partner</span>
+              </div>
+              <div class="col-3">
+                <span>twitter</span>
+                <span>facebook</span>
+                <span>instagram</span>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-line2"></div>
+          <br />
+          <div class="allreserved">
+            <span
+              >All rights reserved &copy;
+              <span id="year"></span> OneLiquidity</span
+            >
           </div>
         </div>
       </div>

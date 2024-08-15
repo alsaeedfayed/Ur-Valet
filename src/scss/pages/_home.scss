@@ -4,6 +4,7 @@
 .home {
   background: linear-gradient(to bottom, #f9fafc 0%, #b3c9dc 100%);
   width: 100%;
+  padding-top: 3rem;
   @include respond("phone") {
     background: $color-white;
   }
@@ -112,7 +113,18 @@
       }
     }
 
+    &__logo {
+      img {
+        width: 30rem;
+        height: 3rem;
+      }
+    }
+
     &__logo--mobile {
+      img {
+        height: 2rem;
+        width: 15rem;
+      }
       display: none;
     }
 

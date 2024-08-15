@@ -14,4 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navBar.classList.toggle("active");
     menuToggle.classList.toggle("active");
   });
+
+  const currentYear = new Date().getFullYear();
+  document.getElementById("year").textContent = currentYear;
 });
