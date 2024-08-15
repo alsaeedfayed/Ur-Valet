@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../src/css/styles.css" />
   </head>
@@ -82,7 +83,11 @@
           <span class="horizontal-line"></span>
           <!-- START OF HOME SECTION  -->
           <section class="home__section">
-            <div class="home__section--intro">
+            <div
+              class="home__section--intro"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <span class="title">ur valet</span>
               <span class="title2"
                 >smart <br />solutions for <br />valet busniesses</span
@@ -100,7 +105,11 @@
                 request now
               </a>
             </div>
-            <div class="home__section--image">
+            <div
+              class="home__section--image"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
               <img
                 src="./assets/imags/hero/Hero-Section Photo_1x.webp"
                 alt="home image"
@@ -111,7 +120,7 @@
       </div>
 
       <!-- START OF CONTRACTORS COMPANIES SECTION -->
-      <div class="contractors">
+      <div class="contractors" data-aos="fade-right" data-aos-duration="2000">
         <h1 class="contractors__heading">
           Support and being used with large company like
         </h1>
@@ -127,7 +136,12 @@
       </div>
 
       <!-- START OF WHY UVALET SECTION -->
-      <div class="why-urVale" id="why">
+      <div
+        class="why-urVale"
+        id="why"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <div class="inner-container">
           <div class="header">
             <div class="header__title">
@@ -215,7 +229,12 @@
       </div>
 
       <!-- START OF FEATURES SECTION -->
-      <div class="features" id="services">
+      <div
+        class="features"
+        id="services"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         <div class="inner-container">
           <div class="content">
             <div class="content__left-col">
@@ -424,7 +443,12 @@
       </div> -->
 
       <!-- CONTACT SECTION -->
-      <div class="contact" id="contact">
+      <div
+        class="contact"
+        id="contact"
+        data-aos="fade-down-left"
+        data-aos-duration="2000"
+      >
         <div class="inner-container">
           <div class="content">
             <div class="contact-means">
@@ -530,5 +554,6 @@
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

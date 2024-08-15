@@ -7,6 +7,8 @@ function switchLanguage(lang) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+  AOS.init();
+
   const menuToggle = document.querySelector(".header__menu-toggle");
   const listItems = document.querySelectorAll("#myList li a");
   const navBar = document.querySelector(".header__nav-bar");

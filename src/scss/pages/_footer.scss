@@ -54,6 +54,11 @@
         gap: 2rem;
         span {
           cursor: pointer;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: $color-primary;
+            font-weight: 500;
+          }
           @include respond("phone") {
             color: #00092e;
             font-weight: 500;

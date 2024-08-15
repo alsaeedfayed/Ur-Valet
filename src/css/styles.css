@@ -31,6 +31,7 @@ body[lang=ar] {
 
 .btn-rounded-primary {
   text-align: center;
+  transition: transform 2.5s ease-in;
   background-color: #2c346d;
   color: #fff;
   border: none;
@@ -45,6 +46,9 @@ body[lang=ar] {
 }
 .btn-rounded-primary:hover {
   background-color: #252b5b;
+}
+.btn-rounded-primary:hover {
+  transform: scale(1.1);
 }
 
 .btn-rounded-secondary {
@@ -806,6 +810,13 @@ body[lang=ar] {
 .footer .content .right-col .col-2 span,
 .footer .content .right-col .col-3 span {
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.footer .content .right-col .col-1 span:hover,
+.footer .content .right-col .col-2 span:hover,
+.footer .content .right-col .col-3 span:hover {
+  color: #2c346d;
+  font-weight: 500;
 }
 @media only screen and (max-width: 70.5em) {
   .footer .content .right-col .col-1 span,
