@@ -121,13 +121,28 @@ body[lang=ar] {
   text-decoration: none;
   color: #000000;
   transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.home .header__nav-bar .list-items__item a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2.5rem;
+  bottom: 0;
+  height: 0.4rem;
+  width: 0;
+  border-radius: 2px;
+  background-color: #2c346d;
+  transition: width 0.3s ease;
+}
+.home .header__nav-bar .list-items__item a:hover::after {
+  width: 50%;
+}
+.home .header__nav-bar .list-items__item a.activee::after {
+  width: 50%;
 }
 .home .header__nav-bar .list-items__item a:hover {
   color: #2c346d;
-}
-.home .header__nav-bar .list-items__item a:focus {
-  color: #3467ab;
-  border-bottom: 3px solid #3467ab;
 }
 .home .header__nav-bar .loginCompany {
   display: none;
