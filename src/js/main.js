@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     formData.forEach((value, key) => {
       data[key] = value;
     });
-    fetch("https://app.ur-valet.io/api/v1/JoinUs", {
+    fetch("https://admin.smartvalet.inzox.co/api/v1/JoinUs", {
       method: "POST", // or 'PUT'
       headers: {
         "Content-Type": "application/json",
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {
           }
         });
       })
-      .then((response) => response.json())
+      // .then((response) => response.json())
       .then((data) => {
         console.log("Success:", data);
         Swal.fire({
@@ -65,9 +65,10 @@ document.addEventListener("DOMContentLoaded", () => {
           icon: "success",
           title: "Your contact has been sent",
           showConfirmButton: false,
-          timer: 1500,
+          timer: 3000,
         });
         // Handle success
+        form.reset();
       })
       .catch((error) => {
         console.error("Error:", error);
