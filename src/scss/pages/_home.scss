@@ -51,6 +51,9 @@
           font-size: 1.8rem;
           font-weight: 400;
           text-transform: capitalize;
+          @include respond("big-desktop") {
+            font-size: 1.4rem;
+          }
 
           a {
             text-decoration: none;
@@ -141,6 +144,10 @@
       img {
         width: 30rem;
         height: 3rem;
+
+        @include respond("big-desktop") {
+          width: 20rem;
+        }
       }
     }
 
@@ -237,6 +244,9 @@
         font-weight: 700;
         color: $color-primary;
         text-transform: capitalize;
+        @include respond("big-desktop") {
+          font-size: 3.5rem;
+        }
       }
       .title2-mobile {
         display: none;
@@ -263,6 +273,10 @@
           text-align: center;
           padding: 0 2rem;
         }
+        @include respond("big-desktop") {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
       }
 
       .btn-request-now {
@@ -270,6 +284,10 @@
         width: 40%;
         @include respond("phone") {
           width: 60%;
+        }
+
+        @include respond("big-desktop") {
+          width: 100%;
         }
       }
     }
