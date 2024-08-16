@@ -5,10 +5,14 @@
   }
 }
 .inner-container {
-  padding: 0 30rem;
+  padding: 0 15rem;
   @include respond("phone") {
     padding: 0 0;
     width: 100%;
+  }
+
+  @include respond("big-desktop") {
+    padding: 0 4rem;
   }
 }
 
