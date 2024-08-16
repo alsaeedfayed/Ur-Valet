@@ -48,6 +48,11 @@
     .contact-form {
       display: flex;
       flex-direction: column;
+      button {
+        &:hover {
+          transform: unset;
+        }
+      }
       gap: 2rem;
       h1 {
         font-weight: 600;

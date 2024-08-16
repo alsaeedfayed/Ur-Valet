@@ -702,6 +702,9 @@ body[lang=ar] {
   flex-direction: column;
   gap: 2rem;
 }
+.contact .content .contact-form button:hover {
+  transform: unset;
+}
 .contact .content .contact-form h1 {
   font-weight: 600;
   font-size: 4rem;
@@ -860,7 +863,8 @@ body[lang=ar] {
 }
 @media only screen and (max-width: 70.5em) {
   .inner-container {
-    padding: 0 0rem;
+    padding: 0 0;
+    width: 100%;
   }
 }
 

@@ -443,12 +443,7 @@
       </div> -->
 
       <!-- CONTACT SECTION -->
-      <div
-        class="contact"
-        id="contact"
-        data-aos="fade-down-left"
-        data-aos-duration="2000"
-      >
+      <div class="contact" id="contact">
         <div class="inner-container">
           <div class="content">
             <div class="contact-means">
@@ -471,38 +466,70 @@
                 </div>
               </div>
             </div>
-            <div class="contact-form">
-              <h1>
-                Sign up now and revolutionize your valet parking business!
-              </h1>
-              <span
-                >Join our platform and take your valet business to the next
-                level.</span
-              >
-              <div class="contact-form__form-group contact-form__form-group--1">
-                <input type="text" placeholder="Full Name" />
-                <input type="text" placeholder="Mobile Number" />
-              </div>
+            <form id="myForm">
+              <div class="contact-form">
+                <h1>
+                  Sign up now and revolutionize your valet parking business!
+                </h1>
+                <span
+                  >Join our platform and take your valet business to the next
+                  level.</span
+                >
 
-              <div class="contact-form__form-group">
-                <input type="email" placeholder="Email Address" />
-              </div>
+                <div
+                  class="contact-form__form-group contact-form__form-group--1"
+                >
+                  <input
+                    id="CompanyName"
+                    required
+                    type="text"
+                    placeholder="Company Name"
+                    name="CompanyName"
+                  />
+                  <input
+                    id="MobileNumber"
+                    required
+                    type="text"
+                    name="MobileNumber"
+                    placeholder="Mobile Number"
+                  />
+                </div>
 
-              <div class="contact-form__form-group">
-                <textarea
-                  rows="7"
-                  name="subjec"
-                  id="subjec "
-                  placeholder="Write here anything you want to send to us"
-                ></textarea>
-              </div>
+                <div class="contact-form__form-group">
+                  <input
+                    id="Email"
+                    required
+                    type="email"
+                    name="Email"
+                    placeholder="Email Address"
+                  />
+                </div>
 
-              <div class="contact-form__form-group">
-                <button class="btn-rounded-primary">
-                  send a request to join
-                </button>
+                <div class="contact-form__form-group">
+                  <input
+                    id="City"
+                    required
+                    type="text"
+                    name="City"
+                    placeholder="Your Address"
+                  />
+                </div>
+                <div class="contact-form__form-group">
+                  <textarea
+                    rows="7"
+                    name="Message"
+                    id="Message"
+                    placeholder="Write here anything you want to send to us"
+                  ></textarea>
+                </div>
+
+                <div class="contact-form__form-group">
+                  <button type="submit" class="btn-rounded-primary">
+                    send a request to join
+                  </button>
+                </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -555,5 +582,6 @@
 
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
