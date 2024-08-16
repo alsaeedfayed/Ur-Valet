@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="../src/css/styles.css" />
   </head>
@@ -17,14 +18,20 @@
     <div class="container">
       <!-- <button onclick="switchLanguage('ar')">ع</button> -->
       <!-- HOME SECTION WITH HEADER INCLUDED -->
-      <div class="home">
+      <div class="home" id="home">
         <div class="inner-container">
           <header class="header">
             <div class="header__logo">
-              <img src="./assets/imags/logo.image.svg" alt="site logo" />
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="site logo"
+              />
             </div>
             <div class="header__logo--mobile">
-              <img src="./assets/imags/logo-mobile.image.svg" alt="site logo" />
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="site logo"
+              />
             </div>
 
             <div class="header__menu-toggle">
@@ -38,9 +45,9 @@
 
             <nav class="header__nav-bar">
               <span class="horizontal-line-mobile"></span>
-              <ul class="list-items">
+              <ul class="list-items" id="myList">
                 <li class="list-items__item loginCompany">
-                  <a href="#login">login as company</a>
+                  <a href="#contact">login as company</a>
                   <img
                     src="./assets/icons/arrow-right.icon.svg"
                     alt="arrow icons"
@@ -54,7 +61,7 @@
                   <a href="#services">services</a>
                 </li>
                 <li class="list-items__item">
-                  <a href="#contact">about us</a>
+                  <a href="#footer">about us</a>
                 </li>
               </ul>
               <div class="menu-mobile-footer">
@@ -68,16 +75,513 @@
               </div>
             </nav>
             <div class="login">
-              <button class="btn-rounded-secondary">login as company</button>
+              <a href="#contact" class="btn-rounded-secondary"
+                >login as company</a
+              >
             </div>
           </header>
           <span class="horizontal-line"></span>
           <!-- START OF HOME SECTION  -->
-          <section class="home__section">home section here</section>
+          <section class="home__section">
+            <div
+              class="home__section--intro"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
+              <span class="title">ur valet</span>
+              <span class="title2"
+                >smart <br />solutions for <br />valet busniesses</span
+              >
+
+              <span class="title2-mobile"
+                >smart solutions for valet busniesses</span
+              >
+              <p class="description">
+                To facilitate your management of the company by fulfilling
+                requests, following up on employees and their job performance,
+                and attracting new customers.
+              </p>
+              <a href="#contact" class="btn-request-now btn-rounded-primary">
+                request now
+              </a>
+            </div>
+            <div
+              class="home__section--image"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <img
+                src="./assets/imags/hero/Hero-Section Photo_1x.webp"
+                alt="home image"
+              />
+            </div>
+          </section>
+        </div>
+      </div>
+
+      <!-- START OF CONTRACTORS COMPANIES SECTION -->
+      <div class="contractors" data-aos="fade-right" data-aos-duration="2000">
+        <h1 class="contractors__heading">
+          Support and being used with large company like
+        </h1>
+        <div class="contractors__content" id="contractor">
+          <img src="./assets/svgs/makani.svg" alt="makani logo" />
+          <img src="./assets/svgs/wokoof.svg" alt="wokoof logo" />
+          <img src="./assets/svgs/pmc.svg" alt="pmc logo" />
+          <img src="./assets/svgs/easyvalet.svg" alt="easy logo" />
+          <img src="./assets/svgs/vpm.svg" alt="vpm logo" />
+          <img src="./assets/svgs/wokoof.svg" alt="wokoof logo" />
+          <img src="./assets/svgs/makani.svg" alt="makani logo" />
+        </div>
+      </div>
+
+      <!-- START OF WHY UVALET SECTION -->
+      <div
+        class="why-urVale"
+        id="why"
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <div class="inner-container">
+          <div class="header">
+            <div class="header__title">
+              <h1>Why you'll love Using<br /><span>UR Valet</span></h1>
+            </div>
+            <div class="header__description">
+              <p>
+                Urvalet app aspires to build a great
+                <span class="header__description--bold"
+                  >Great Smart Valet Solutions</span
+                >
+                for valet agencies for long term while also delivering on
+                expectations from agencies that makes
+                <span class="header__description--bold"
+                  >Great Customer Experience</span
+                >
+                journey for the users.
+              </p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="card card--elctronics">
+                <h1>Electronic registration of the vehicle</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo quidem cumque temporibus vitae molestiae
+                  corporis consequuntur maiores veritatis ullam nulla quisquam,
+                  sequi maxime, ab exercitationem voluptatibus similique unde
+                  blanditiis!
+                </p>
+                <img
+                  src="./assets/imags/why/No.1 Pic_1x.webp"
+                  alt="electronics"
+                />
+              </div>
+              <div class="card card--automation">
+                <h1>Fully automated journey</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo quidem cumque temporibus vitae molestiae
+                  corporis consequuntur maiores veritatis ullam nulla quisquam,
+                  sequi maxime, ab exercitationem voluptatibus similique unde
+                  blanditiis!
+                </p>
+                <img
+                  src="./assets/imags/why/No.2 Pic_4x.webp"
+                  alt="electronics"
+                />
+              </div>
+            </div>
+
+            <div class="row row2">
+              <div class="card card--bringCar">
+                <h1>Electronic registration of the vehicle</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo quidem cumque temporibus vitae molestiae
+                  corporis consequuntur maiores veritatis ullam nulla quisquam,
+                  sequi maxime, ab exercitationem voluptatibus similique unde
+                  blanditiis!
+                </p>
+                <img
+                  src="./assets/imags/why/No.3 Pic_1x.webp"
+                  alt="electronics"
+                />
+              </div>
+              <div class="card card--orderDeails">
+                <h1>Fully automated journey</h1>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Accusantium nemo quidem cumque temporibus vitae molestiae
+                  corporis consequuntur maiores veritatis ullam nulla quisquam,
+                  sequi maxime, ab exercitationem voluptatibus similique unde
+                  blanditiis!
+                </p>
+                <img
+                  src="./assets/imags/why/No.4 Pic_1x.webp"
+                  alt="electronics"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- START OF FEATURES SECTION -->
+      <div
+        class="features"
+        id="services"
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
+        <div class="inner-container">
+          <div class="content">
+            <div class="content__left-col">
+              <h2 class="col-header">
+                amazing features <br />
+                to convince you
+              </h2>
+              <span class="col-desc">
+                This solution helps the valet agencies to optimize the <br />
+                services and reduce the cost through.
+              </span>
+              <div class="join-us">
+                <span
+                  ><img
+                    src="./assets/icons/arrow-right-circle.icon.svg"
+                    alt="arror icon"
+                /></span>
+                <span><a href="#contact">join us now!</a></span>
+              </div>
+              <div class="feature-items feature-items--leftcol-item">
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/message.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Send an advertising <br />
+                    to customer
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+                <div class="feature-items__item">
+                  <img src="./assets/icons/paper.icon.svg" alt="message icon" />
+                  <h1 class="feature-items__item--header">
+                    Reduce the paper cost
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content__right-col">
+              <div class="feature-items feature-items--firstrighcol">
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/automation.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Fully automated journey
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/invoice.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Electronic invoice and payment
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+              </div>
+              <div class="feature-items">
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/tracking.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Vehicle tracking system
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/evaluation.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Staff evaluation and auditing
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+              </div>
+
+              <div class="feature-items">
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/report.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Electronic reports
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+                <div class="feature-items__item">
+                  <img
+                    src="./assets/icons/appointment.icon.svg"
+                    alt="message icon"
+                  />
+                  <h1 class="feature-items__item--header">
+                    Arranging vehicle appointments
+                  </h1>
+                  <p class="feature-items__item--content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus corrupti ex quasi.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CUSTOMER REVIEWS -->
+      <!-- <div class="customer-reviews">
+        <div class="inner-container">
+          <div class="content">
+            <h1 class="content__heading">What our customers have to say</h1>
+            <div class="content__reviews">
+              <div class="content__reviews--review">
+                <span class="qutote">&#8220;</span>
+                <span class="review"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum quae fugit officia dolore
+                </span>
+                <div class="reviewer">
+                  <img src="./assets/imags/reviewer1.png" alt="Reviewer 1" />
+                  <div class="reviewer__info">
+                    <span class="reviewer__info--name">Reviewer 1</span>
+                    <span class="reviewer__info--title">CEO company name</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__reviews--review">
+                <span class="qutote">&#8220;</span>
+                <span class="review"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum quae fugit officia dolore</span
+                >
+                <div class="reviewer">
+                  <img src="./assets/imags/reviewr3.png" alt="Reviewer 1" />
+                  <div class="reviewer__info">
+                    <span class="reviewer__info--name">Reviewer 1</span>
+                    <span class="reviewer__info--title">CEO company name</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__reviews--review">
+                <span class="qutote">&#8220;</span>
+                <span class="review"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum quae fugit officia dolore
+                </span>
+                <div class="reviewer">
+                  <img src="./assets/imags/reviewr2.png" alt="Reviewer 1" />
+                  <div class="reviewer__info">
+                    <span class="reviewer__info--name">Reviewer 1</span>
+                    <span class="reviewer__info--title">CEO company name</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content__reviews--review">
+                <span class="qutote">&#8220;</span>
+                <span class="review"
+                  >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptatum quae fugit officia dolore</span
+                >
+                <div class="reviewer">
+                  <img src="./assets/imags/reviewr4.png" alt="Reviewer 1" />
+                  <div class="reviewer__info">
+                    <span class="reviewer__info--name">Reviewer 1</span>
+                    <span class="reviewer__info--title">CEO company name</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- CONTACT SECTION -->
+      <div class="contact" id="contact">
+        <div class="inner-container">
+          <div class="content">
+            <div class="contact-means">
+              <h1>Need help?</h1>
+              <div class="contact-means__mean">
+                <img src="./assets/icons/phone.icon.svg" alt="phone" />
+                <div class="contact-means__mean--data">
+                  <span class="phone-number"
+                    ><span>+966</span><span>123</span><span>123</span>123</span
+                  >
+                  <span class="description">support hotline</span>
+                </div>
+              </div>
+
+              <div class="contact-means__mean">
+                <img src="./assets/icons/email.icon.svg" alt="phone" />
+                <div class="contact-means__mean--data">
+                  <span class="phone-number">help@urvalet.com</span>
+                  <span class="description">support email</span>
+                </div>
+              </div>
+            </div>
+            <form id="myForm">
+              <div class="contact-form">
+                <h1>
+                  Sign up now and revolutionize your valet parking business!
+                </h1>
+                <span
+                  >Join our platform and take your valet business to the next
+                  level.</span
+                >
+
+                <div
+                  class="contact-form__form-group contact-form__form-group--1"
+                >
+                  <input
+                    id="CompanyName"
+                    required
+                    type="text"
+                    placeholder="Company Name"
+                    name="CompanyName"
+                  />
+                  <input
+                    id="MobileNumber"
+                    required
+                    type="text"
+                    name="MobileNumber"
+                    placeholder="Mobile Number"
+                  />
+                </div>
+
+                <div class="contact-form__form-group">
+                  <input
+                    id="Email"
+                    required
+                    type="email"
+                    name="Email"
+                    placeholder="Email Address"
+                  />
+                </div>
+
+                <div class="contact-form__form-group">
+                  <input
+                    id="City"
+                    required
+                    type="text"
+                    name="City"
+                    placeholder="Your Address"
+                  />
+                </div>
+                <div class="contact-form__form-group">
+                  <textarea
+                    rows="7"
+                    name="Message"
+                    id="Message"
+                    placeholder="Write here anything you want to send to us"
+                  ></textarea>
+                </div>
+
+                <div class="contact-form__form-group">
+                  <button type="submit" class="btn-rounded-primary">
+                    send a request to join
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="footer">
+        <div class="inner-container">
+          <div class="content" id="footer">
+            <div class="left-col">
+              <img
+                src="./assets/imags/ur-valet logo transparent.png"
+                alt="logo"
+              />
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Molestiae laboriosam accusamus minus nihil? Deserunt, rem magni
+                aspernatur odit illo id excepturi incidunt officiis nulla porro
+                ipsa mollitia alias atque repellendus.
+              </p>
+            </div>
+            <div class="right-col">
+              <div class="col-1">
+                <span>about us</span>
+                <span>services</span>
+                <span>why ur valet?</span>
+              </div>
+              <div class="col-2">
+                <span>terms & conditions</span>
+                <span>privacy policy</span>
+                <span>become a partner</span>
+              </div>
+              <div class="col-3">
+                <span>twitter</span>
+                <span>facebook</span>
+                <span>instagram</span>
+              </div>
+            </div>
+          </div>
+          <div class="horizontal-line2"></div>
+          <br />
+          <div class="allreserved">
+            <span
+              >All rights reserved &copy;
+              <span id="year"></span> OneLiquidity</span
+            >
+          </div>
         </div>
       </div>
     </div>
 
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>

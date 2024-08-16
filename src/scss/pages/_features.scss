@@ -1,0 +1,78 @@
+.features {
+  margin-top: 16rem;
+  .content {
+    display: flex;
+
+    @include respond("phone") {
+      flex-direction: column;
+      padding: 0 4rem;
+    }
+    .feature-items {
+      display: flex;
+      gap: 3rem;
+      &--firstrighcol {
+        margin-top: -4rem;
+        @include respond("phone") {
+          margin-top: 4rem;
+        }
+      }
+      &--leftcol-item {
+        margin-top: 6rem;
+        @include respond("phone") {
+          margin-top: unset;
+        }
+      }
+      &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: left;
+        margin-top: 4rem;
+        gap: 1rem;
+        img {
+          height: 3rem;
+        }
+        p {
+          color: #2e2c2f;
+          font-size: 2rem;
+        }
+      }
+    }
+    &__left-col {
+      display: flex;
+      flex-direction: column;
+      @include respond("phone") {
+        justify-content: center;
+        align-items: center;
+      }
+      gap: 2rem;
+      .col-header {
+        font-size: 5.5rem;
+        font-weight: 700;
+        color: $color-black;
+        text-transform: uppercase;
+        @include respond("phone") {
+          font-size: 3rem;
+        }
+      }
+      .col-desc {
+        font-size: 2.3rem;
+        font-weight: 400;
+        word-break: break-all;
+        @include respond("phone") {
+          font-size: 1.7rem;
+        }
+      }
+      .join-us {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+    }
+
+    &__right-col {
+    }
+  }
+}

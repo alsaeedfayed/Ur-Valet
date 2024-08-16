@@ -1,6 +1,9 @@
 @import "../abstract/mixins";
 
 .btn-rounded-primary {
+  text-align: center;
+  transition: transform 2.5s ease-in;
+
   @include button-styles(
     $bg-color: $color-primary,
     $border-radius: 10rem,
@@ -10,4 +13,7 @@
   text-transform: capitalize;
   font-size: 1.8rem;
   font-weight: 500;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
